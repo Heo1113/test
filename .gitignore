@@ -1,0 +1,53 @@
+# ============================================================
+# Unreal Engine 5 — .gitignore
+# 추적해야 할 것: .uproject, Source/, Content/, Config/, Plugins/<p>/{Source,Content,Resources,*.uplugin}
+# 추적하지 말 것: 빌드 산출물, 캐시, IDE 설정, OS 잡파일
+# ============================================================
+
+# === UE 빌드/캐시 산출물 (모두 자동 재생성) ===
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+
+# === 패키징/배포 산출물 ===
+Build/
+Builds/
+
+# === 플러그인 빌드 산출물 (위 패턴에 이미 잡히지만 명시) ===
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# === 에디터 자동 백업 ===
+Backup/
+
+# === Visual Studio ===
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.opendb
+*.sdf
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.vsconfig
+CppProperties.json
+
+# === Rider / VSCode ===
+.idea/
+.vscode/
+
+# === 컴파일 산출물 (Binaries/ 외 안전망) ===
+*.target
+*.modules
+
+# === OS 잡파일 ===
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# === UE 라이센스/임시 ===
+*.tps
